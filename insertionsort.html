@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="insertionsort.js"></script>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <div class="close">
+            <svg xmlns="http://www.w3.org/2000/svg" class="closemenu" id="closemenu" height="1.5em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </div>
+        <a href="bubblesort.html">Bubble Sort</a>
+        <a href="insertionsort.html">Insertion Sort</a>
+        <a href="mergesort.html">Merge Sort</a>
+        <a href="selectionsort.html">Selection Sort</a>
+        <a href="quicksort.html">Quick Sort</a>
+        <a href="heapsort.html">Heap Sort</a>
+
+        
+    </div>
+
+    <header>
+        <div class="nav">
+            <div class="left"><div class="menu" id="menu"><svg class="menusvg" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
+            <h2 class="name nav-item">Vsort</h2></div>
+
+           
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="aboutus.html" class="nav-item">About us</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="learnModal" class="modal">
+        <div class="modal-content">
+            <span class="closersvg" id="closeLearnModal"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#000000}</style><path d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></span>
+            <h2 class="sortname">Insertion Sort</h2>
+            <p class="description">
+                Insertion Sort is a simple and efficient comparison-based sorting algorithm that builds the final sorted array one item at a time. It starts with the second element and compares it with the items before it, inserting it into its correct position among the already sorted elements. This process is repeated for each element in the list until the entire list is sorted.
+            </p>
+            
+            <div class="complexity">
+                <h2>Complexity</h2>
+                <table>
+                    <tr>
+                        <th>Case</th>
+                        <th>Time Complexity</th>
+                        <th>Space Complexity</th>
+                    </tr>
+                    <tr>
+                        <td>Best Case</td>
+                        <td>O(n)</td>
+                        <td>O(1)</td>
+                    </tr>
+                    <tr>
+                        <td>Worst Case</td>
+                        <td>O(n^2)</td>
+                        <td>O(1)</td>
+                    </tr>
+                    <tr>
+                        <td>Average Case</td>
+                        <td>O(n^2)</td>
+                        <td>O(1)</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <h2 class="ref">References</h2>
+            <ul class="ref-links">
+                <li><a href="https://en.wikipedia.org/wiki/Insertion_sort" target="_blank">Insertion Sort on Wikipedia</a></li>
+                <li><a href="https://www.geeksforgeeks.org/insertion-sort/" target="_blank">Insertion Sort on GeeksforGeeks</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+
+    <div class="selections">
+        <div class="rightselection">
+            <div class="learn">
+                <button class="learn-button button-67">LEARN</button>
+            </div>
+            <div class="temp">
+                <button class="randomize button-67" id="randomize">SHUFFLE</button>
+            </div>
+        
+            <div class="sort">
+                <button class="sorting button-67" id="sorting">SORT</button>
+            </div>
+        </div>
+
+        <div class="rangeslider">
+            <input type="range" min="2" max="100" value="50" class="slider" id="myRange">
+            <div id="slidervalue"></div>
+        </div>
+        
+        
+
+        
+
+
+    </div>
+
+    <div class="main">
+        
+    </div>
+
+</body>
+</html>

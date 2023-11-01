@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Michroma&family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(pexels-alex-conchillos-3745234.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+   
+}
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+
+.main{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 65vh;
+    margin-top: auto;
+}
+
+.num{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    align-items: flex-end;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 0;
+    background: rgb(84,84,84);
+background: -moz-linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(172,172,172,1) 100%);
+background: -webkit-linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(172,172,172,1) 100%);
+background: linear-gradient(0deg, rgba(84,84,84,1) 0%, rgba(172,172,172,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#545454",endColorstr="#acacac",GradientType=1);
+}
+
+.current{
+
+    background: #2947AD !important;
+}
+
+.selections{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2%;
+    gap: 10rem;
+}
+
+.temp, .sort{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.randomize {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem; 
+
+    align-items: center;
+}
+
+
+.rangeslider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 20%;
+    gap: 1rem;
+}
+
+.slider {
+    width: 100%;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white;
+    outline: none;
+    border-radius: 20px;
+}
+
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #2947AD;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slidervalue {
+    width: 15%;
+    height: 20px; 
+    font-size: 1rem;
+ 
+    color: white;
+}
+
+
+
+
+.rangeslider{
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: middle;
+}
+
+
+.menusvg, .name{
+    display: flex;
+    padding-left: 2rem;
+    color: white;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem; 
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: middle;
+    
+}
+
+
+.selection{
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+}
+
+
+
+
+
+.button-67 {
+    padding: 1.5em 1.5em; 
+    font-size: 0.7rem; 
+    text-transform: uppercase;
+    letter-spacing: 1px; 
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2947AD;
+    border: none;
+    border-radius: 3px; 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+    text-align: center;
+}
+
+
+.button-67:hover {
+    background-color: white;
+    box-shadow: 0px 10px 15px #6d86d7; 
+    color: black;
+    transform: translateY(-3px);
+}
+
+.button-67:active {
+    transform: translateY(1px);
+}
+
+.sidebar {
+    background-color: white;
+    color: black;
+    height: 100vh; 
+    width: 20%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    justify-content: center;
+    transform: translateX(-100%);
+    top: 0; 
+    left: 0; 
+    z-index: 1; 
+    transition: 0.3s ease;
+}
+
+.sidebar a{
+    color: black;
+    padding-top:5%
+}
+
+.sidebar.open {
+    right: 0; 
+}
+
+.close {
+    
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+}
+
+.closemenu{
+    fill: black !important;
+}
+
+
+.menu:hover{
+    cursor: pointer;
+}
+
+
+.rightselection{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    display: flex;
+    flex-direction: column; 
+    padding: 2%;
+    border: 1% solid #888;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 60%; 
+    text-align: center;
+    position: relative; 
+    overflow-y: auto;
+    gap: 1rem;
+}
+.menusvg{
+    fill: white!important;
+}
+.closersvg{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: black;
+    cursor: pointer;
+}
+
+
+.modal-content a{
+    color: black;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100; 
+}
+
+
+.modal-content ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.complexity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.complexity th, .complexity td{
+    padding-right: 2%;
+}
+
+.sortname, .complexity h2, .ref{
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 320px) {
+    body{
+        gap: 2rem;
+    }
+    .nav{
+        font-size: 0.7rem;
+        gap: 0.1rem;
+    }
+
+    .nav-item{
+        margin-right: 0;
+        
+    }
+
+    .modal{
+        height: 150%;
+        width: 100%;
+    }
+    .selections{
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .rightselection{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .button-67{
+        font-size: 0.5rem;
+        width: fit-content;
+    }
+
+    #myRange{
+        
+        width: fit-content;
+    }
+    
+    .nav-item{
+        margin-right: 0.5rem;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+    
+    .sortname, .complexity h2, .ref{
+        font-size: 1rem;
+    }
+    
+    .modal-content p{
+        font-size: 0.7rem;
+    }
+
+    .ref-links, .complexity tr{
+        font-size: 0.7rem;
+    }
+    
+    .closersvg{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    .menusvg, .name{
+        display: flex;
+        padding-left: 0.7rem;
+        color: white;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    body{
+        gap: 2rem;
+    }
+    .nav{
+        font-size: 0.9rem;
+        gap: 0.1rem;
+    }
+
+    .nav-item{
+        margin-right: 0;
+        
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .selections{
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .rightselection{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .button-67{
+        font-size: 0.7rem;
+        width: fit-content;
+    }
+
+    #myRange{
+        
+        width: fit-content;
+    }
+    
+    .nav-item{
+        margin-right: 1rem;
+    }
+
+    .sortname, .complexity h2, .ref{
+        font-size: 1rem;
+    }
+    
+    .modal-content p{
+        font-size: 0.7rem;
+    }
+
+    .modal{
+        width: 100%;
+        height: 150%;
+    }
+
+    .ref-links, .complexity tr{
+        font-size: 0.7rem;
+    }
+    
+    .closersvg{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        gap: 2rem;
+    }
+    .nav{
+        font-size: 0.9rem;
+        gap: 0.1rem;
+    }
+
+    .nav-item{
+        margin-right: 0;
+        
+    }
+
+    .selections{
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .rightselection{
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .modal{
+        width: 100%;
+        height: 150%;
+    }
+
+    .button-67{
+        font-size: 0.7rem;
+        width: fit-content;
+    }
+
+    #myRange{
+        
+        width: fit-content;
+    }
+    
+    .nav-item{
+        margin-right: 1rem;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    
+    .sortname, .complexity h2, .ref{
+        font-size: 1rem;
+    }
+    
+    .modal-content p{
+        font-size: 0.8rem;
+    }
+
+    .ref-links, .complexity tr{
+        font-size: 0.8rem;
+    }
+    
+    .closersvg{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    body{
+        gap: 2rem;
+    }
+    .nav{
+        font-size: 0.9rem;
+        gap: 0.1rem;
+    }
+
+    .nav-item{
+        margin-right: 0;
+        
+    }
+
+    .selections{
+        gap: 3rem;
+        flex-direction: row;
+    }
+
+    .rightselection{
+        flex-direction: row;
+        gap: 5rem;
+    }
+
+    .button-67{
+        font-size: 0.7rem;
+        width: fit-content;
+    }
+
+    #myRange{
+        
+        width: fit-content;
+    }
+    
+    .nav-item{
+        margin-right: 1rem;
+    }
+    .sidebar{
+        width: 100%;
+    }
+    
+    .sortname, .complexity h2, .ref{
+        font-size: 1.1rem;
+    }
+    
+    .modal-content p{
+        font-size: 0.9rem;
+    }
+
+    .ref-links, .complexity tr{
+        font-size: 0.9rem;
+    }
+    
+    .closersvg{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    
+}
+

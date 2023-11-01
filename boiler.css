@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Michroma&family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: "Poppins",sans-serif;
+    display: flex;
+    background: url(pexels-alex-conchillos-3745234.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    overflow: hidden;
+   
+}
+
+body {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+
+
+
+a{
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+    color: white;
+}
+header{
+    width: 100%;
+    
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: middle;
+}
+
+
+.menusvg, .name{
+    display: flex;
+    padding-left: 2rem;
+    color: white;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem; 
+}
+
+.nav-item {
+    padding-right: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: middle;
+}
+
+
+.menu:hover{
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 280px) {
+    body{
+        
+        overflow: auto;
+    }
+    .nav{
+        font-size: 0.6rem!important;
+        
+    }
+    .nav-item{
+        padding-right: 0.5rem;
+    }
+
+    .primary{
+        font-size: 0.5rem;
+    }
+
+    .greeting{
+        font-size: 2rem;
+    }
+
+    .para{
+        font-size: 0.5rem;
+        width: 80%;
+    }
+
+    .card-container h6,p{
+        font-size: 0.5rem!important;
+    }
+
+    
+    .card-container h3{
+        font-size: 0.7rem;
+    }
+
+    .skills{
+        font-size: 0.7rem!important;
+    }
+
+    .card-container{
+        
+        width: 80%!important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .menusvg, .name{
+        display: flex;
+        padding-left: 0.7rem;
+        color: white;
+        align-items: center;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 281px)and (max-width: 320px) {
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+    
+    }
+    
+    .nav{
+        font-size: 0.7rem;
+
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    .primary{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        font-size: 0.7rem;
+    }
+
+    .card-container{
+        width: 60%!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .greeting{
+        font-size: 3rem!important;
+    }
+
+    .para{
+        font-size: 0.7rem;
+        width: 80%;
+    }
+
+    .skills p{
+        font-size: 0.7rem;
+    }
+
+    .card-container p{
+        font-size: 0.7rem;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    body {
+        font-size: 1rem;
+        -ms-overflow-style: thin;  
+        scrollbar-width: thin; 
+        overflow: auto;
+        background-repeat: repeat;
+        
+    }
+
+    .main{
+        overflow: auto;
+    }
+
+    .sidebar{
+        overflow: auto;
+    }
+
+    .greeting{
+        font-size: 3rem;
+    }
+
+    .para{
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .card-container{
+        height: 60%;
+        width: 50%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container p{
+        font-size: 0.7rem;
+    }
+
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    button.primary{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5rem;
+        width: 40%;
+        height: 40%;
+        
+    }
+
+    .nav-item{
+        padding-right: 0.8rem;
+    }
+
+    .nav{
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+    .main{
+        overflow: auto;
+    }
+
+    body{
+        overflow: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        background-repeat: repeat;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .card-container{
+        width: 50%;
+    }
+
+    .card-container p{
+        font-size: 0.7rem;
+    }
+
+    .primary{
+        font-size: 0.7rem;
+    }
+
+    .greeting{
+        font-size: 3rem;
+    }
+    .para{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+
+    .sidebar{
+        width: 100%;
+    }
+
+    .nav{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    body{
+        overflow: auto;
+        background-repeat: repeat;
+        
+        
+    }
+
+    .card-container p{
+        font-size: 0.7rem;
+    }
+
+    .para{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+
+    .primary{
+        font-size: 0.7rem;
+    }
+
+    .greeting{
+        font-size: 4rem;
+    }
+
+    .nav{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
+    body{
+        overflow: auto;
+        background-repeat: repeat;
+        
+    }
+
+    .nav{
+        font-size: 1rem;
+    }
+    
+    .para{
+        font-size: 0.9rem;
+        width: 70%;
+    }
+
+    .greeting{
+        font-size: 4.5rem;
+    }
+
+    .card-container p{
+        font-size: 0.7rem;
+    }
+}

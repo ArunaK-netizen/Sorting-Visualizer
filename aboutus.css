@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Michroma&family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+@media only screen and (max-width: 280px) {
+    body{
+        gap: 3rem;
+    }
+
+    
+}
+
+@media only screen and (min-width: 281px)and (max-width: 320px) {
+    body{
+        gap: 4rem;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    body{
+        gap: 5rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        gap: 6rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        gap: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body{
+        gap: 8rem;
+    }
+}
