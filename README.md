@@ -21,11 +21,3 @@ A step by step guide that will tell you how to get the development environment u
 1. Clone the repo
 2. Open the repo in an IDE, and navigate to index.html
 3. Right click on the editing space, choose run with liveserver and that's it VISUALIZE
-
-
-
-
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
